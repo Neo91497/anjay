@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forever Yours ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#1a0010;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#1DB954;
+}
+
+.logo{
+    font-weight:800;
+    color:#ff2e6a;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:url('bgg.jpeg') center center/cover no-repeat;
+    position:relative;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+}
+
+h1{
+    font-size:50px;
+}
+
+.highlight{
+    color:#ff2e6a;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 35px;
+    border-radius:30px;
+    background:#1DB954;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#17a74a;
+}
+
+/* SECTION */
+section{
+    padding:100px 8%;
+    text-align:center;
+}
+
+/* PESAN BOX */
+.pesan-box{
+    max-width:700px;
+    margin:30px auto;
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(255,0,100,0.2);
+    line-height:1.8;
+}
+
+/* SPOTIFY PLAYER */
+.player-container{
+    max-width:700px;
+    margin:40px auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 40px rgba(30,215,96,0.4);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    opacity:0.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">❤️ Forever Yours</div>
+    <div>
+        <a href="#love">Love Note</a>
+        <a href="#pesan">Pesan</a>
+        <a href="#music">Music</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Happy Valentine’s Day, <span class="highlight">My Love</span></h1>
+        <p>Every moment with you feels like magic.</p>
+        <a href="#music" class="btn">Play Our Playlist 🎶</a>
+    </div>
+</section>
+
+<section id="love">
+    <h2>To My Forever ❤️</h2>
+    <p style="max-width:700px;margin:20px auto;">
+        Gue cuma pengen lu tau satu hal penting.
+Having you in my life is honestly one of the best things that ever happened to gue.
+Lu bukan cuma pacar buat gue, tapi juga tempat pulang, tempat cerita, dan tempat gue ngerasa aman.
+
+Makasih ya karena lu selalu berusaha, bahkan di hari-hari yang berat banget.
+Gue liat semua effort lu, semua capek lu, semua hal yang lu pendam sendiri.
+And I just want you to know, I appreciate you more than you think, and I’m really proud of you.
+
+Kadang hidup emang nggak selalu easy.
+But please remember this, okay.
+Lu itu enough. Lu berharga. Lu penting.
+Not just to the world, but especially to me.
+
+Gue selalu milih lu.
+Every single day, in every situation.
+No matter how messy things get, gue tetap di sini.
+
+Gue sayang lu.
+More than words can say, more than yesterday, and always growing. You are my favorite person, my safe place, and my forever.
+        No matter what happens, I will always choose you.
+    </p>
+</section>
+
+<section id="pesan">
+    <h2>Special Message 💌</h2>
+    <div class="pesan-box">
+        My love,<br><br>
+        Thank you for being the best part of my life.
+        Your smile brightens my darkest days,
+        your voice is my favorite sound,
+        and your love is my greatest blessing.<br><br>
+
+        I promise to always stand by your side,
+        to support you, protect you,
+        and love you endlessly.<br><br>
+
+        Forever yours ❤️
+    </div>
+</section>
+
+<section id="music">
+    <h2>Our Spotify Playlist 💚</h2>
+
+    <div class="player-container">
+        <!-- GANTI PLAYLIST_ID DENGAN PLAYLIST KAMU -->
+        <iframe style="border-radius:12px"
+        src="https://open.spotify.com/playlist/1nhyGaZPF8E6JFGXfIcISr?si=c066e2c9ae24468a"
+        width="100%"
+        height="380"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+    </div>
+</section>
+
+<footer>
+    Made with ❤️ for someone special
+</footer>
+
+</body>
+</html>
